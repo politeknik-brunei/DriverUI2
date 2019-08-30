@@ -5,6 +5,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'mainpagebustaxi', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'mainpagebustaxi', loadChildren: './mainpagebustaxi/mainpagebustaxi.module#MainpagebustaxiPageModule' },  { path: 'homepage', loadChildren: './homepage/homepage.module#HomepagePageModule' },
+  { path: 'qrscanner', loadChildren: './qrscanner/qrscanner.module#QrscannerPageModule' },
 
 
 ];
